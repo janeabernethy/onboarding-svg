@@ -1,42 +1,121 @@
 <html>
     <head>
-        <style>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+      <style>
+          
         .content {
             display: grid;
-            max-width: 100%;
             overflow: visible;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-column-gap: 80px;
+            grid-column-gap: 16px;
+            grid-row-gap: 16px;
             padding: 20px;
+            width: 960px;
         }
 
   
+        .option {
+          border: 1px solid rgba(14, 19, 24, 0.15);
+          box-sizing: border-box;
+          border-radius: 4px;
+          width: 320px;
+          height: 216px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
       
+      object {
+        width: 88px;
+        height: 88px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+
+      .title {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+      }
+
+      .description {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        /* or 22px */
+        color: rgba(14, 19, 24, 0.7);
+        text-align: center;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
         </style>
     </head>
 
     <body>
       <div class="content">
 
+        <div class="option">
+          <object type="image/svg+xml" data="Teacher.svg">
+          Teacher
+          </object>
+          <div class="title">Teacher</div>
+          <div class="description">You’re here to empower your students</div>
+        </div>
+
+
+        <div class="option">
+          <object type="image/svg+xml" data="Student.svg">
+          Student
+          </object>
+          <div class="title">Student</div>
+          <div class="description">You’re here to impress your teachers and classmates</div>
+          </div>
+
+
+        <div class="option">
         <object type="image/svg+xml" data="Personal.svg">
           Personal
         </object>
+        <div class="title">Personal</div>
+        <div class="description">You're here to make anything and everything</div>
+        </div>
 
-        <object type="image/svg+xml" data="Teacher.svg">
-        Teacher
-        </object>
+      
 
-        <object type="image/svg+xml" data="Student.svg">
-        Student
-        </object>
+        
 
+        <div class="option">
         <object type="image/svg+xml" data="SmallBusiness.svg">
         Small Business
         </object>
+        <div class="title">Small Business</div>
+        <div class="description">You’re here to design your brand from the ground up</div>
 
+        </div>
+
+        <div class="option">
         <object type="image/svg+xml" data="BigBusiness.svg">
         Big Business
         </object>
+        <div class="title">Large Company</div>
+        <div class="description">You’re here to scale your brand and keep it consistent</div>
+
+      </div>
+
+        <div class="option">
+        <object type="image/svg+xml" data="NonProfit.svg">
+          NonProfit
+          </object>
+          <div class="title">Non Profit</div>
+          <div class="description">You’re here to design for the greater good</div>
+
+        </div>
 
       </div>
     </body>
